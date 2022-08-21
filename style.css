@@ -1,0 +1,615 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", Arial;
+}
+.main-container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-image:radial-gradient(white, rgb(207, 207, 207));
+  display: block;
+}
+#logo {
+  font-size: 25px;
+  color: white;
+}
+#logo span {
+  color: black;
+}
+nav {
+  margin-top: 10px;
+  padding: 10px 9%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  font-size: 15px;
+  background-color: rgb(59, 59, 59);
+  color: white;
+  padding: 7px 20px;
+  border-radius: 7px;
+  transition: all 0.3s ease;
+}
+nav a:hover {
+  border: 1px solid rgb(59, 59, 59);
+  background-color: rgb(229, 229, 229);
+  color: rgb(59, 59, 59);
+}
+.hello {
+  background-color: white;
+  width: 250px;
+  height: 130px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 5px 5px 20px rgba(113, 113, 113, 0.377);
+  margin-left: 25%;
+  margin-top: 5%;
+}
+.hello p {
+  font-size: 55px;
+}
+.intro {
+  font-size: 20px;
+  line-height: 1.5;
+}
+.intro h2 {
+  font-size: 15px;
+  font-weight: 300;
+}
+.intro h1 {
+  font-size: 35px;
+}
+
+.avatar {
+  margin-left: 50%;
+  margin-top: -13%;
+  width: 340px;
+}
+.social-bar {
+  height: 120px;
+  width: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 9%;
+  position: absolute;
+  bottom: 10%;
+}
+.instagram img {
+  height: 35px;
+}
+.facebook img {
+  height: 35px;
+}
+
+/* Middle section*/
+.skills {
+  background-color: rgb(39, 39, 39);
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.who {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 270px;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+}
+#who-icon {
+  font-size: 50px;
+}
+.who-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#who-title {
+  font-size: 23px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+#who-description {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.career {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 270px;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+}
+#career-icon {
+  font-size: 50px;
+}
+.career-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#career-title {
+  font-size: 23px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+#career-description {
+  font-size: 15px;
+  text-align: center;
+  font-weight: 300;
+  padding: 0px 20px 0px 20px;
+}
+
+.education {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 270px;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+}
+#education-icon {
+  font-size: 50px;
+}
+.education-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#education-title {
+  font-size: 23px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+#education-description {
+  width: 90%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 0px 20px 0px 20px;
+
+}
+
+.family {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 270px;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+}
+#family-icon {
+  font-size: 50px;
+}
+.family-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#family-title {
+  font-size: 23px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+#family-description {
+  text-align: center;
+  width: 90%;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+
+.btn-career {
+  font-family: "Poppins", Arial;
+  margin-top: 15px;
+  width: 110px;
+  height: 35px;
+  background-color: rgb(30, 30, 30);
+  color: white;
+  font-weight: 300;
+  font-size: 12px;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-career:hover {
+  color: rgb(30, 30, 30);
+  background-color: rgb(217, 217, 217);
+  border: 1px solid rgb(30, 30, 30);
+}
+
+/* footer section */
+.footer {
+  min-height: 20vh;
+  background-image:radial-gradient(white, rgb(207, 207, 207));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-me-icon {
+  font-size: 35px;
+  margin-right: 12px;
+}
+.contact-me {
+  margin-left: 12px;
+}
+
+
+
+/* pages section */
+
+
+
+/* about section ----------------------------------*/
+.about-container {
+  min-height: 100vh;
+  background-image:radial-gradient(white, rgb(227, 227, 227));
+}
+.about-container h1 {
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-bottom: 30px;
+  font-weight: 500;
+}
+.about-container p {
+  padding-left: 10%;
+  padding-right: 35%;
+  line-height: 2;
+  font-weight: 300;
+}
+
+/* End about section ---------------------------- */
+
+
+/* career section ------------------------------ */
+.career-container2 {
+  min-height: 100vh;
+  background-image:radial-gradient(white, rgb(227, 227, 227));
+}
+.career-container2 h1 {
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-bottom: 30px;
+  font-weight: 500;
+}
+.career-container2 p {
+  padding-left: 10%;
+  padding-right: 35%;
+  line-height: 2;
+  font-weight: 300;
+}
+
+/* End career section -------------------------- */
+
+
+
+/* education section -------------------------*/
+.edu-container {
+  min-height: 100vh;
+  background-image:radial-gradient(white, rgb(227, 227, 227));
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.edu-container h1 {
+  padding-top: 5%;
+  padding-bottom: 15px;
+  font-weight: 500;
+}
+.edu-container h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.edu-container p {
+  line-height: 2;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+.other {
+  margin-bottom: 30px;
+}
+ 
+.education-images {
+  display: flex;
+  height: 150px;
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+}
+
+
+/* End education section ----------------------------- */
+
+
+
+
+/* Family section */
+.family-container2 {
+  min-height: 100vh;
+  background-image:radial-gradient(white, rgb(227, 227, 227));
+}
+.family-container2 h1 {
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-bottom: 30px;
+  font-weight: 500;
+}
+.family-container2 p {
+  padding-left: 10%;
+  padding-right: 35%;
+  line-height: 2;
+  font-weight: 300;
+}
+
+/* End family section */
+
+
+/* Contact section ----------------------------------*/
+.contact-container {
+  min-height: 100vh;
+  background-image:radial-gradient(white, rgb(227, 227, 227));
+}
+.contact-container h1 {
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-bottom: 30px;
+  font-weight: 500;
+}
+.contact-container p {
+  padding-left: 10%;
+  padding-right: 35%;
+  line-height: 2;
+  font-weight: 300;
+}
+.contact-container span {
+  font-weight: 600;
+}
+
+
+
+
+@media only screen and (max-width: 767px){
+  .main-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  #logo {
+    font-size: 23px;
+  }
+  .hello {
+    width: 190px;
+    height: 85px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 5px 5px 20px rgba(113, 113, 113, 0.377);
+    margin-left: 5%;
+    margin-top: 20%;
+    font-family: "Poppins", Arial;
+  }
+  .hello p {
+    font-size: 45px;
+  }
+  .intro {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  .intro h2 {
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .intro h1 {
+    font-size: 30px;
+  }
+  .avatar {
+    width: 300px;
+    margin-left: 25%;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .who, .career, .education, .family {
+    width: 220px;
+    height: 220px;
+  }
+  #who-icon, #career-icon, #education-icon, #family-icon {
+    font-size: 30px;
+  }
+  #who-title, #career-title, #education-title, #family-title {
+    font-size: 18px;
+  }
+  #who-description, #career-description, #education-description, #family-description {
+    font-size: 14px;
+  }
+
+
+  .about-container {
+    min-height: 100vh;
+    width: 100%;
+    background-image:radial-gradient(white, rgb(227, 227, 227));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-container h1 {
+    padding-top: 10%;
+    padding-bottom: 30px;
+    font-weight: 500;
+    font-size: 25px;
+    padding-left: 0;
+  }
+  .about-container p {
+    line-height: 2;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 0px 30px 35px 30px;
+  }
+
+
+  .career-container2 {
+    min-height: 100vh;
+    width: 100%;
+    background-image:radial-gradient(white, rgb(227, 227, 227));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .career-container2 h1 {
+    padding-top: 10%;
+    padding-bottom: 30px;
+    font-weight: 500;
+    font-size: 25px;
+    padding-left: 0;
+  }
+  .career-container2 p {
+    line-height: 2;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 0px 30px 35px 30px;
+  }
+
+
+
+  .edu-container {
+    width: 100%;
+    background-image:radial-gradient(white, rgb(227, 227, 227));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .edu-container h1 {
+    padding-top: 10%;
+    padding-bottom: 30px;
+    font-weight: 500;
+    font-size: 25px;
+    padding-left: 0;
+  }
+  .edu-container h2 {
+    padding-top: 0;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+  }
+  .edu-container p {
+    line-height: 2;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 0px 0px 35px 0px;
+  }
+  .education-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: auto;
+  }
+  .education-images img {
+    width: 60%;
+  }
+  
+
+
+
+  .family-container2 {
+    min-height: 100vh;
+    width: 100%;
+    background-image:radial-gradient(white, rgb(227, 227, 227));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .family-container2 h1 {
+    padding-top: 10%;
+    padding-bottom: 30px;
+    font-weight: 500;
+    font-size: 25px;
+    padding-left: 0;
+  }
+  .family-container2 p {
+    line-height: 2;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 0px 30px 35px 30px;
+  }
+
+
+
+  .contact-container {
+    min-height: 100vh;
+    width: 100%;
+    background-image:radial-gradient(white, rgb(227, 227, 227));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-container h1 {
+    padding-top: 10%;
+    padding-bottom: 30px;
+    font-weight: 500;
+    font-size: 25px;
+    padding-left: 0;
+  }
+  .contact-container p {
+    line-height: 2;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 0px 30px 35px 30px;
+    text-align: center;
+  }
+
+
+  .footer {
+    min-height: 15vh;
+  }
+
+
+
+  nav a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 300;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    padding: 6px 17px;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+  }
+  nav a:hover {
+    border: 1px solid rgb(59, 59, 59);
+    background-color: rgb(229, 229, 229);
+    color: rgb(59, 59, 59);
+  }
+}
